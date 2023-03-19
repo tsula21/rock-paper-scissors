@@ -1,0 +1,58 @@
+/*  */
+
+.symbols {
+  width: calc(var(--index) * 25);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: 200px;
+  grid-template-areas:
+    " a . b "
+    " c c c ";
+  margin: 0 auto;
+  position: relative;
+}
+
+.symbol_circle.blue,
+.paper {
+  grid-area: a;
+  border: 20px solid #5472f3;
+}
+.symbol_circle.orange,
+.scissors {
+  grid-area: b;
+  border: 20px solid #eaaa26;
+}
+.symbol_circle.red,
+.rock {
+  grid-area: c;
+  justify-self: center;
+  border: 20px solid #e0415e;
+}
+
+.symbol_circle {
+  -webkit-box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.31);
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.31);
+  background: rgb(255, 252, 244);
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.symbol_circle:hover {
+  transform: scale(1.08);
+}
+
+.triangle {
+  width: calc(var(--index) * 16);
+  margin-top: 35px;
+  position: absolute;
+  align-self: center;
+  justify-self: center;
+}

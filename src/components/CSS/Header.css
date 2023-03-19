@@ -1,0 +1,41 @@
+.header-section {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.header {
+  border: 2px solid #516683;
+  border-radius: 20px;
+  height: 150px;
+}
+
+.header_box {
+  height: 100%;
+  max-width: calc(var(--index) * 43);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-score {
+  background-color: rgb(255, 252, 244);
+  width: calc(var(--index) * 6);
+  height: calc(var(--index) * 5);
+  color: #535064;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.header-score h2 {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.header-score h3 {
+  font-size: 62px;
+  line-height: 0.85;
+}

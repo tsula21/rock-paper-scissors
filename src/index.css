@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --index: calc(1vw + 1vh);
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  color: white;
+  overflow: hidden;
+}
+
+.App {
+  background: rgb(31, 54, 86);
+  background: radial-gradient(
+    circle,
+    rgba(31, 54, 86, 1) 0%,
+    rgba(19, 22, 57, 1) 100%
+  );
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.App .container {
+  width: calc(var(--index) * 45);
+  margin: 0 auto;
+}
+
+.result {
+  display: flex;
+  justify-content: space-around;
+}
+
+.result .content {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.result .content h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.result .content button {
+  width: 175px;
+  height: 40px;
+  border-radius: 10px;
+
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: rgb(223, 223, 223);
+  transition: all 200ms ease;
+}
+
+.result .content button:hover {
+  background-color: white;
+}
+
+.symbol_circle.win {
+  /* box-shadow: 0px 0px 19px 5px rgb(255 255 255 / 90%) !important; */
+  box-shadow: rgba(163, 163, 163, 0.76) 0px 0px 15px 5px,
+    rgba(255, 255, 255, 0.21) 0px 0px 31px 20px !important;
+}
+.symbol_circle.lose {
+  opacity: 0.7;
+}
